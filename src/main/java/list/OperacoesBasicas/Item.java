@@ -3,8 +3,8 @@ package main.java.list.OperacoesBasicas;
 public class Item {
     //atributos
     private String nome;
-    double preco;
-    int quantidade;
+    private double preco;
+    private int quantidade;
 
     public Item(String nome, double preco, int quantidade) {
         this.nome = nome;
@@ -24,4 +24,12 @@ public class Item {
         return quantidade;
     }
 
+    @Override
+    public String toString() {
+        return "Item{" +
+                "nome='" + nome + '\'' +
+                ", preco=" + preco +
+                ", quantidade=" + quantidade +
+                '}';
+    }
 }
